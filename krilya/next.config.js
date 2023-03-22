@@ -4,10 +4,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "example.com",
-        port: "",
-        pathname: "/account123/**",
+        hostname: 'nox281.github.io',
       },
     ],
   },

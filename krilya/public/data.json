@@ -1,36 +1,36 @@
 [
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/golf8.jpg",
+    "img": "./golf8.jpg",
     "name": "Volkswagen",
     "model": "Golf 8"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/c63.jpg",
+    "img": "./c63.jpg",
     "name": "Mercedes",
     "model": "C63"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/m4.jpg",
+    "img": "./m4.jpg",
     "name": "BMW",
     "model": "M4"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/208.jpg",
+    "img": "./208.jpg",
     "name": "Peugeot",
     "model": "208"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/sandero.jpg",
+    "img": "./sandero.jpg",
     "name": "Dacia",
     "model": "Sandero"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/focus.jpg",
+    "img": "./focus.jpg",
     "name": "Ford",
     "model": "Focus"
   },
   {
-    "img": "https://nox281.github.io/Krilya/krilya/public/fiesta.jpg",
+    "img": "/fiesta.jpg",
     "name": "Ford",
     "model": "Fiesta"
   }
