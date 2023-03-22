@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "./Header";
 import Banner from "./Banner";
-import data from "../public/data.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +32,9 @@ export default function Home({exploreData}) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("./data.json");
-  then(res => res.json());
+  const exploreData = await fetch(
+    "https://nox281.github.io/Krilya/krilya/public/data.json"
+  ).then(res => res.json());
   return {
     props: {
       exploreData
