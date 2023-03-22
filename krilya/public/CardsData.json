@@ -1,0 +1,34 @@
+[
+  {
+    "img": "/suv.jpg",
+    "title": "SUV"
+  },
+  {
+    "img": "/sedan.jpg",
+    "title": "Sedan"
+  },
+  {
+    "img": "/hatchback.jpg",
+    "title": "Hatchback"
+  },
+  {
+    "img": "/truck.jpg",
+    "title": "Truck"
+  },
+  {
+    "img": "/coupe.jpg",
+    "title": "Coupe"
+  },
+  {
+    "img": "/convertible.jpg",
+    "title": "Convertible"
+  },
+  {
+    "img": "/sportscar.jpg",
+    "title": "Sportscar"
+  },
+  {
+    "img": "/limousine.jpg",
+    "title": "Limousine"
+  }
+]

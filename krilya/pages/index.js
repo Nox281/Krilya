@@ -54,7 +54,9 @@ export async function getStaticProps() {
     "https://nox281.github.io/Krilya/krilya/public/CarsData.json"
   ).then((res) => res.json());
 
-  const cardsData = await fetch().then((res) => res.json);
+  const cardsData = await fetch(
+    "https://nox281.github.io/Krilya/krilya/public/CardsData.json"
+  ).then((res) => res.json());
   return {
     props: {
       exploreData,
