@@ -5,10 +5,16 @@ import styles from "@/styles/Home.module.css";
 import Header from "./Header";
 import Banner from "./Banner";
 import SmallCard from "./SmallCard";
+import { Ubuntu } from "next/font/google";
+
+const abc = Ubuntu({
+  subsets: ["latin"],
+  weight: "300",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
   return (
     <>
       <Head>
@@ -18,14 +24,25 @@ export default function Home({ exploreData }) {
         <link rel="icon" href="/../public/favicon.ico" />
       </Head>
       <Header />
-      <Banner />
-      <main className="max-w-7xl mx-auto">
+      <Banner className={`relative ${abc.className}`} />
+      <main className={`max-w-7xl mx-auto px-8 sm:px16 ${abc.className}`}>
         <section className="pt-6">
-          <h2 className="text-3xl font-bold pb-5">Explore Nearby</h2>
+          <h2 className="text-3xl font-extrabold pb-5 drop-shadow-md">
+            Explore Nearby
+          </h2>
           {/* Data endpoint fetching */}
-          {exploreData?.map(({img, name, model}) => (
-            <SmallCard key={img} img={img} name={name} model={model} />
-          ))}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {exploreData?.map(({ img, name, model }) => (
+              <SmallCard key={img} img={img} name={name} model={model} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold py-8 font-abc drop-shadow-md">
+            Travel
+          </h2>
         </section>
       </main>
     </>
@@ -34,11 +51,14 @@ export default function Home({ exploreData }) {
 
 export async function getStaticProps() {
   const exploreData = await fetch(
-    "https://nox281.github.io/Krilya/krilya/public/data.json"
+    "https://nox281.github.io/Krilya/krilya/public/CarsData.json"
   ).then((res) => res.json());
+
+  const cardsData = await fetch().then((res) => res.json);
   return {
     props: {
       exploreData,
+      cardsData,
     },
   };
 }
