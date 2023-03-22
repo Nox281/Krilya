@@ -1,31 +1,31 @@
 [
   {
-    "img": "./golf8.jpg",
+    "img": "/golf8.jpg",
     "name": "Volkswagen",
     "model": "Golf 8"
   },
   {
-    "img": "./c63.jpg",
+    "img": "/c63.jpg",
     "name": "Mercedes",
     "model": "C63"
   },
   {
-    "img": "./m4.jpg",
+    "img": "/m4.jpg",
     "name": "BMW",
     "model": "M4"
   },
   {
-    "img": "./208.jpg",
+    "img": "/208.jpg",
     "name": "Peugeot",
     "model": "208"
   },
   {
-    "img": "./sandero.jpg",
+    "img": "/sandero.jpg",
     "name": "Dacia",
     "model": "Sandero"
   },
   {
-    "img": "./focus.jpg",
+    "img": "/focus.jpg",
     "name": "Ford",
     "model": "Focus"
   },
