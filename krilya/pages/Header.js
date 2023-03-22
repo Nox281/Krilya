@@ -10,7 +10,7 @@ import {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 shadow-md grid grid-cols-3 my-auto bg-white p-5 md:px-10 ">
+    <header className="fixed w-full top-0 z-50 shadow-md grid grid-cols-3 my-auto bg-white p-5 md:px-10 opacity-80 hover:opacity-100 transition duration-200 focus-within:opacity-100">
       
       {/* Left */}
       <div className="relative flex items-center h-10 cursor-pointer ">
@@ -29,7 +29,7 @@ function Header() {
           placeholder="Search a Car"
           className="flex-grow text-sm placeholder-gray-400 text-gray-600  pl-4 outline-none bg-transparent"
         ></input>
-        <SearchIcon className="hidden md:inline h-7 cursor-pointer bg-teal-300 rounded-full p-1.5 md:mx-1" />
+        <SearchIcon className="hidden md:inline h-7 cursor-pointer text-white bg-teal-300 rounded-full p-1.5 md:mx-1" />
       </div>
 
       {/* Right */}
