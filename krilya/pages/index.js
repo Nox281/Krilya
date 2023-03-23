@@ -1,16 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import { Cairo } from "next/font/google";
 import Header from "./Header";
 import Banner from "./Banner";
 import SmallCard from "./SmallCard";
-import { Ubuntu } from "next/font/google";
+import MediumCard from "./MediumCard";
+import LargeCard from "./LargeCard";
+import Footer from "./Footer";
 
-const abc = Ubuntu({
+const poppins700 = Poppins({
   subsets: ["latin"],
-  weight: "300",
+  weight: "700",
 });
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,26 +29,38 @@ export default function Home({ exploreData, cardsData }) {
         <link rel="icon" href="/../public/favicon.ico" />
       </Head>
       <Header />
-      <Banner className={`relative ${abc.className}`} />
-      <main className={`max-w-7xl mx-auto px-8 sm:px16 ${abc.className}`}>
+      <Banner className={`relative ${poppins700.className}`} />
+      <main className={`max-w-7xl mx-auto px-8 sm:px16`}>
         <section className="pt-6">
-          <h2 className="text-3xl font-extrabold pb-5 drop-shadow-md">
-            Explore Nearby
+          <h2 className={`text-2xl pb-5  ${poppins700.className}`}>
+            Explore Cars
           </h2>
           {/* Data endpoint fetching */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="flex space-x-4 overflow-scroll scrollbar-hide p-3 -ml-3 scroll-smooth">
             {exploreData?.map(({ img, name, model }) => (
-              <SmallCard key={img} img={img} name={name} model={model} />
+              <SmallCard key={img} img={img} name={name} />
             ))}
           </div>
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold py-8 font-abc drop-shadow-md">
-            Travel
+          <h2 className={`text-2xl py-8 ${poppins700.className}`}>
+            Search by Category
           </h2>
+          <div className="flex space-x-5 overflow-scroll scrollbar-hide p-3 -ml-3">
+            {cardsData?.map(({ img, title }) => (
+              <MediumCard key={img} img={img} title={title} />
+            ))}
+          </div>
         </section>
+        <LargeCard
+          img="/../public/largeCard.webp"
+          title="The greatest outdoors"
+          description="Wishlists curated by Krilya"
+          buttonText="Get Inspired"
+        />
+        <Footer />
       </main>
     </>
   );
@@ -55,7 +72,7 @@ export async function getStaticProps() {
   ).then((res) => res.json());
 
   const cardsData = await fetch(
-    "https://nox281.github.io/Krilya/krilya/public/CardsData.json"
+    "https://nox281.github.io/Krilya/krilya/public/LocationsData.json"
   ).then((res) => res.json());
   return {
     props: {

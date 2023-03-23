@@ -1,0 +1,34 @@
+[
+  {
+    "img": "/fes.jpg",
+    "title": "Fes"
+  },
+  {
+    "img": "/meknes.jpg",
+    "title": "Meknes"
+  },
+  {
+    "img": "/tetouan.jpg",
+    "title": "Tetouan"
+  },
+  {
+    "img": "/tanger.jpg",
+    "title": "Tanger"
+  },
+  {
+    "img": "/marrakech.jpg",
+    "title": "Marrakech"
+  },
+  {
+    "img": "/rabat.jpg",
+    "title": "Rabat"
+  },
+  {
+    "img": "/casa.jpg",
+    "title": "Casablanca"
+  },
+  {
+    "img": "/limousine.jpg",
+    "title": "Limousine"
+  }
+]
