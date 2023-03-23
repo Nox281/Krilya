@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function MediumCard({img, title}) {
   return (
-    <div className="rounded-xl hover:shadow-gray-400 cursor-pointer shadow-md hover:scale-105 transition transform duration-300 ease-out">
+    <div className="rounded-xl mb-2 hover:shadow-gray-400 cursor-pointer shadow-md hover:scale-105 transition transform duration-300 ease-out">
       <div className="relative w-80 h-60">
         <Image
           src={img}
