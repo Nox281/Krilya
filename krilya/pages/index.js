@@ -37,8 +37,8 @@ export default function Home({ exploreData, cardsData }) {
           </h2>
           {/* Data endpoint fetching */}
 
-          <div className="flex space-x-4 overflow-scroll scrollbar-hide p-3 -ml-3 scroll-smooth">
-            {exploreData?.map(({ img, name, model }) => (
+          <div className="flex space-x-4 overflow-scroll scrollbar-hide pr-3 pb-3 -ml-2 scroll-smooth">
+            {exploreData?.map(({ img, name }) => (
               <SmallCard key={img} img={img} name={name} />
             ))}
           </div>
