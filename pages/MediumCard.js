@@ -8,7 +8,7 @@ function MediumCard({img, title}) {
         <Image
           src={img}
           layout="fill"
-          className="rounded-xl object-cover hover:blur-sm transform transition duration-200 ease-in-out"
+          className="rounded-xl object-cover transform transition duration-200 ease-in-out"
         />
       </div>
       <h3 className="absolute bottom-0 left-0 right-0 px-5 py-3 text-xl mt-3 bg-black rounded-b-xl text-white opacity-60">
