@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRangePicker } from "react-date-range";
 
 function Banner() {
   const [searchInput, setSearchInput] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+
+  const selectionRange = {
+    startDate: startDate,
+    endDate: endDate,
+    key: "Selection",
+  };
 
   return (
     <div className="select-none relative h-[200px] sm:h-[200px] lg:h-[300px] xl:h-[400px] 2xl:h-[500px] flex justify-center">
@@ -27,13 +38,16 @@ function Banner() {
           ></input>
           <SearchIcon className="inline h-8 cursor-pointer ml-auto text-white bg-fuchsia-400 rounded-full p-1.5 mx-0.5 mb-0.5" />
         </div>
+        {searchInput && (
+          <div className="active:bg-white">
+            <DateRangePicker
+              ranges={[selectionRange]}
+              minDate={new Date()}
+              rangeColors={["#e879f9"]}
+            />
+          </div>
+        )}
       </div>
-
-      {searchInput && (
-        <div>
-
-        </div>
-      )}
     </div>
   );
 }
