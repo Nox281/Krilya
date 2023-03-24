@@ -60,8 +60,8 @@ export default function Home({ exploreData, cardsData }) {
           description="Wishlists curated by Krilya"
           buttonText="Get Inspired"
         />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
