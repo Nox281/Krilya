@@ -1,36 +1,36 @@
 [
   {
-    "img": "/golf8.jpg",
+    "img": "https://i.imgur.com/z92HqBJ.jpg",
     "name": "Volkswagen",
     "model": "Golf 8"
   },
   {
-    "img": "/c63.jpg",
+    "img": "https://i.imgur.com/MB4U7qt.jpg",
     "name": "Mercedes",
     "model": "C63"
   },
   {
-    "img": "/m4.jpg",
+    "img": "https://i.imgur.com/AfxKGIE.jpg",
     "name": "BMW",
     "model": "M4"
   },
   {
-    "img": "https://i.imgur.com/VMN9pJi.jpeg",
+    "img": "https://i.imgur.com/JKSCYBu.jpg",
     "name": "Peugeot",
     "model": "208"
   },
   {
-    "img": "/sandero.jpg",
+    "img": "https://i.imgur.com/BeVFiU4.jpg",
     "name": "Dacia",
     "model": "Sandero"
   },
   {
-    "img": "/focus.jpg",
+    "img": "https://i.imgur.com/Iheeqih.jpg",
     "name": "Ford",
     "model": "Focus"
   },
   {
-    "img": "/fiesta.jpg",
+    "img": "https://i.imgur.com/TYhMLt6.jpg",
     "name": "Ford",
     "model": "Fiesta"
   }
