@@ -1,13 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
   images: {
-    remotePatterns: [
-      {
-        hostname: 'nox281.github.io',
-      },
-    ],
+    domains: ["i.imgur.com"],
   },
 };
-
-module.exports = nextConfig
