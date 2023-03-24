@@ -1,34 +1,30 @@
 [
   {
-    "img": "/fes.jpg",
+    "img": "https://i.imgur.com/M4UyiEb.jpg",
     "title": "Fès"
   },
   {
-    "img": "/meknes.jpg",
+    "img": "https://i.imgur.com/xzkf7vK.jpg",
     "title": "Meknes"
   },
   {
-    "img": "/tetouan.jpg",
+    "img": "https://i.imgur.com/UubdEBf.jpg",
     "title": "Tetouan"
   },
   {
-    "img": "/tanger.jpg",
+    "img": "https://i.imgur.com/mMrNDEH.jpg",
     "title": "Tanger"
   },
   {
-    "img": "/marrakech.jpg",
+    "img": "https://i.imgur.com/ZNGkajq.jpg",
     "title": "Marrakech"
   },
   {
-    "img": "/rabat.jpg",
+    "img": "https://i.imgur.com/c3h51y9.jpg",
     "title": "Rabat"
   },
   {
-    "img": "/casa.jpg",
+    "img": "https://i.imgur.com/F9KF82h.jpg",
     "title": "Casablanca"
-  },
-  {
-    "img": "/limousine.jpg",
-    "title": "Limousine"
   }
 ]

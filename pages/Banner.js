@@ -6,7 +6,7 @@ function Banner() {
   return (
     <div className="relative h-[200px] sm:h-[200px] lg:h-[300px] xl:h-[400px] 2xl:h-[500px] flex justify-center">
       <Image
-        src="/../public/banner2.jpg"
+        src="https://i.imgur.com/qFxfXNR.jpg"
         layout="fill"
         objectFit="cover"
         className="blur"
