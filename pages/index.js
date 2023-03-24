@@ -54,7 +54,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <LargeCard
-          img="/../public/largeCard.webp"
+          img="https://i.imgur.com/0RmEGjn.jpg"
           title="The greatest outdoors"
           description="Wishlists curated by Krilya"
           buttonText="Get Inspired"
