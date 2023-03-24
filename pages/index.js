@@ -16,7 +16,6 @@ const poppins700 = Poppins({
   weight: "700",
 });
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ exploreData, cardsData }) {
@@ -68,11 +67,11 @@ export default function Home({ exploreData, cardsData }) {
 
 export async function getStaticProps() {
   const exploreData = await fetch(
-    "https://nox281.github.io/Krilya/krilya/public/CarsData.json"
+    "https://nox281.github.io/Krilya/public/CarsData.json"
   ).then((res) => res.json());
 
   const cardsData = await fetch(
-    "https://nox281.github.io/Krilya/krilya/public/LocationsData.json"
+    "https://nox281.github.io/Krilya/public/LocationsData.json"
   ).then((res) => res.json());
   return {
     props: {
