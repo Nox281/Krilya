@@ -48,6 +48,7 @@ function Banner() {
               rangeColors={["#e879f9"]}
               onChange={handleSelect}
               className="transform transition duration-200"
+              onClick={(e) => e.preventDefault()}
             />
           </div>
         )}
