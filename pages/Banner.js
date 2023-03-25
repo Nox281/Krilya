@@ -3,7 +3,7 @@ import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { DateRange, DateRangePicker } from "react-date-range";
+import { DateRange } from "react-date-range";
 
 function Banner() {
   const [searchInput, setSearchInput] = useState("");
@@ -30,7 +30,7 @@ function Banner() {
       />
 
       <div className="relative  z-40 rounded-3xl focus-within:shadow-xl focus:bg-opacity-10  transform transition duration-500">
-        <div className="flex rounded-full shadow-lg bg-gray-100 p-1 pt-1.5 hover:bg-white focus-within:shadow-xl focus-within:w-screen sm:focus-within:w-auto focus-within:bg-white transform transition duration-210 ease-out">
+        <div className="flex rounded-full shadow-lg bg-gray-100 p-1 pt-1.5 hover:bg-white focus-within:shadow-xl sm:focus-within:w-auto focus-within:bg-white transform transition duration-210 ease-out">
           <input
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
