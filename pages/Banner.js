@@ -3,7 +3,7 @@ import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { DateRangePicker } from "react-date-range";
+import { DateRange, DateRangePicker } from "react-date-range";
 
 function Banner() {
   const [searchInput, setSearchInput] = useState("");
@@ -42,11 +42,12 @@ function Banner() {
         </div>
         {searchInput && (
           <div className="rounded-2xl overflow-hidden transition-opacity duration-500 mt-4">
-            <DateRangePicker
+            <DateRange 
               ranges={[selectionRange]}
               minDate={new Date()}
               rangeColors={["#e879f9"]}
               onChange={handleSelect}
+              className="transform transition duration-200"
             />
           </div>
         )}
