@@ -21,6 +21,10 @@ function Banner() {
     setEndDate(ranges.selection.endDate);
   };
 
+  const resetInput = (searchInput) => {
+    setSearchInput('');
+  };
+
   return (
     <div className="select-none relative h-fit flex justify-center py-32 transform transition-all duration-300">
       <Image
@@ -48,8 +52,8 @@ function Banner() {
               rangeColors={["#e879f9"]}
               onChange={handleSelect}
               className="transform transition duration-200"
-              onClick={(e) => e.preventDefault()}
             />
+            <h2 onClick={resetInput} className="relative bg-white text-center pb-3">Cancel</h2>
           </div>
         )}
       </div>
