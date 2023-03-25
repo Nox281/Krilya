@@ -32,7 +32,7 @@ export default function Home({ exploreData, cardsData }) {
       <main className={`select-none max-w-7xl mx-auto px-8 sm:px16`}>
         <section className="pt-6">
           <h2 className={`text-2xl pb-5  ${poppins700.className}`}>
-            Explore Cars
+            Search by Make
           </h2>
           {/* Data endpoint fetching */}
 
@@ -45,7 +45,7 @@ export default function Home({ exploreData, cardsData }) {
 
         <section>
           <h2 className={`text-2xl py-8 ${poppins700.className}`}>
-            Search by Category
+            Search by Location
           </h2>
           <div className="flex space-x-5 overflow-scroll scrollbar-hide p-3 -ml-3">
             {cardsData?.map(({ img, title }) => (
