@@ -5,12 +5,12 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 240, 230, 245;
+  --background-start-rgb: 217, 219, 222;
   --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
@@ -107,5 +107,11 @@ a {
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: dark;
+  }
+}
+
+@layer components {
+  .button {
+    @apply text-sm border border-gray-300 px-4 py-2 bg-white rounded-full cursor-pointer hover:shadow-lg active:bg-gray-100 active:scale-95 transform transition duration-100 select-none ease-out;
   }
 }
