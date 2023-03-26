@@ -3,16 +3,21 @@ import Footer from "./Footer";
 import Header2 from "./Header2";
 import Router, { useRouter } from "next/router";
 import format from "date-fns/format";
-import SearchBar from "./SearchBar";
+import InfoCard from "./InfoCard";
 
-function Search() {
+function Search({ searchResults }) {
   const router = useRouter();
   const { location, startDate, endDate } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yyyy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yyyy");
-  const range = `${formattedStartDate} - ${formattedEndDate}`;
+  let formattedStartDate = "";
+  let formattedEndDate = "";
+  let range = "";
 
+  if (startDate && endDate) {
+    formattedStartDate = format(new Date(startDate), "dd MMMM yyyy");
+    formattedEndDate = format(new Date(endDate), "dd MMMM yyyy");
+    range = `${formattedStartDate} - ${formattedEndDate}`;
+  }
   return (
     <div className="h-screen">
       <Header2 />
@@ -31,6 +36,20 @@ function Search() {
             <p className="button">Price</p>
             <p className="button">More Filters</p>
           </div>
+          {searchResults.map(
+            ({ img, location, title, description, star, price, total }) => (
+              <InfoCard
+                key={img}
+                img={img}
+                location={location}
+                title={title}
+                description={description}
+                star={star}
+                price={price}
+                total={total}
+              />
+            )
+          )}
         </section>
       </main>
 
@@ -40,3 +59,15 @@ function Search() {
 }
 
 export default Search;
+
+export async function getServerSideProps() {
+  const searchResults = await fetch(
+    "https://nox281.github.io/Krilya/public/availableCars.json"
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      searchResults,
+    },
+  };
+}
