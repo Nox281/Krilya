@@ -41,7 +41,7 @@ function Header() {
       </div>
 
       {/* Divider */}
-      <div className="border border-gray-300 mt-2 col-span-full"></div>
+      <div className="border border-gray-200 hidden md:block mt-2 col-span-full"></div>
 
       {/* Bottom */}
       <div className="pt-2 col-span-3 hidden gap-x-3 md:inline-flex whitespace-nowrap">

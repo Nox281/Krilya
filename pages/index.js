@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
-import { Cairo } from "next/font/google";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import SmallCard from "@/components/SmallCard";
@@ -36,7 +33,7 @@ export default function Home({ exploreData, cardsData }) {
           </h2>
           {/* Data endpoint fetching */}
 
-          <div className="flex space-x-4 overflow-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-4 pr-3 pb-3 -ml-2 scroll-smooth">
+          <div className="flex space-x-4 overflow-x-scroll md:scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-2 pr-3 pb-3 -ml-2 scroll-smooth">
             {exploreData?.map(({ img, name }) => (
               <SmallCard key={img} img={img} name={name} />
             ))}
@@ -47,7 +44,7 @@ export default function Home({ exploreData, cardsData }) {
           <h2 className={`text-2xl py-8 ${poppins700.className}`}>
             Search by Location
           </h2>
-          <div className="flex space-x-5 overflow-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-5 p-3 -ml-3">
+          <div className="flex space-x-5 overflow-x-scroll md:scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-3 p-3 -ml-3">
             {cardsData?.map(({ img, title }) => (
               <MediumCard key={img} img={img} title={title} />
             ))}

@@ -28,8 +28,8 @@ function Search({ searchResults }) {
       <Header2 />
 
       <main className="lg:grid lg:grid-cols-2 pl-4">
-        <section className="flex-grow">
-          <div className="overflow-scroll scrollbar-thin mr-1 pr-1 scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full pt-20 md:pt-28 scroll-smooth h-screen">
+        <section className="h-screen pt-20 md:pt-[116px]">
+          <div className="scrollbar-thin h-full mr-1 pr-1 md:overflow-y-scroll scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scroll-smooth">
             <p className="text-xs pt-2">400+ cars available in {range}</p>
 
             <h1 className="text-3xl font-semibold mt-0 mb-3">
@@ -52,7 +52,7 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        <section className="hidden pt-12 md:pt-[106px] lg:flex w-full">
+        <section className="hidden pt-12 md:pt-[116px] lg:flex w-full">
           <SideMap />
         </section>
       </main>
