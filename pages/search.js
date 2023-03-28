@@ -1,5 +1,4 @@
 import * as React from "react";
-import Footer from "@/components/Footer";
 import Header2 from "@/components/Header2";
 import { useRouter } from "next/router";
 import format from "date-fns/format";

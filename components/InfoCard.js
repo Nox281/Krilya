@@ -12,8 +12,8 @@ const poppins700 = Poppins({
 
 function InfoCard({ img, location, title, description, star, price, total }) {
   return (
-    <div className="block sm:flex sm:pr-3 hover:bg-white mb-3 rounded-lg border-y border-gray-300 cursor-pointer hover:opacity-90 hover:shadow-lg transform transition duration-150">
-      <div className="relative h-52 w-full sm:h-32 sm:w-56 xl:h-40 xl:w-60 flex-shrink-0">
+    <div className="block sm:flex sm:pr-3 hover:bg-white mb-3 rounded-lg border sm:border-y mr-2 md:mr-2 border-gray-300 cursor-pointer hover:opacity-90 hover:shadow-lg transform transition duration-150">
+      <div className="relative h-52 w-full sm:h-36 sm:w-56 xl:h-40 xl:w-60 flex-shrink-0">
         <Image
           src={img}
           layout="fill"
@@ -22,10 +22,10 @@ function InfoCard({ img, location, title, description, star, price, total }) {
         />
       </div>
 
-      <div className="flex flex-col flex-grow pl-2 sm:pl-5 justify-between -mt-1">
+      <div className="flex flex-col flex-grow pl-2 sm:pl-5 justify-between ">
         <div className="flex justify-between items-end">
           <p>{location}</p>
-          <HeartIcon className="h-5 cursor-pointer mt-2 mr-2" />
+          <HeartIcon className="h-5 cursor-pointer mt-2 mr-2 sm:mr-0" />
         </div>
 
         <p className="text-2xl font-extrabold">{title}</p>
