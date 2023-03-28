@@ -4,12 +4,12 @@ import styles from "@/styles/Home.module.css";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import { Cairo } from "next/font/google";
-import Header from "./Header";
-import Banner from "./Banner";
-import SmallCard from "./SmallCard";
-import MediumCard from "./MediumCard";
-import LargeCard from "./LargeCard";
-import Footer from "./Footer";
+import Header from "@/components/Header";
+import Banner from "@/components/Banner";
+import SmallCard from "@/components/SmallCard";
+import MediumCard from "@/components/MediumCard";
+import LargeCard from "@/components/LargeCard";
+import Footer from "@/components/Footer";
 
 const poppins700 = Poppins({
   subsets: ["latin"],
@@ -29,25 +29,25 @@ export default function Home({ exploreData, cardsData }) {
       </Head>
       <Header />
       <Banner className={`relative ${poppins700.className}`} />
-      <main className={`select-none max-w-7xl mx-auto px-8 sm:px16`}>
-        <section className="pt-6">
+      <main className={`select-none max-w-7xl mx-auto px-8 sm:px-16`}>
+        <section className="pt-6 -mx-4 sm:mx-0">
           <h2 className={`text-2xl pb-5  ${poppins700.className}`}>
             Search by Make
           </h2>
           {/* Data endpoint fetching */}
 
-          <div className="flex space-x-4 overflow-scroll scrollbar-hide pr-3 pb-3 -ml-2 scroll-smooth">
+          <div className="flex space-x-4 overflow-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-4 pr-3 pb-3 -ml-2 scroll-smooth">
             {exploreData?.map(({ img, name }) => (
               <SmallCard key={img} img={img} name={name} />
             ))}
           </div>
         </section>
 
-        <section>
+        <section className=" -mx-4 sm:mx-0">
           <h2 className={`text-2xl py-8 ${poppins700.className}`}>
             Search by Location
           </h2>
-          <div className="flex space-x-5 overflow-scroll scrollbar-hide p-3 -ml-3">
+          <div className="flex space-x-5 overflow-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-5 p-3 -ml-3">
             {cardsData?.map(({ img, title }) => (
               <MediumCard key={img} img={img} title={title} />
             ))}

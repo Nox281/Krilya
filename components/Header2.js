@@ -1,12 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {
-  SearchIcon,
-  MenuIcon,
-  UserCircleIcon,
-  UsersIcon,
-  GlobeAltIcon,
-} from "@heroicons/react/solid";
+import { MenuIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import SearchBar from "./SearchBar";
 
@@ -14,7 +8,7 @@ function Header() {
   const router = useRouter();
 
   return (
-    <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 opacity-80 hover:opacity-100 transition duration-200 focus-within:opacity-100">
+    <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 transition duration-200">
       {/* Left */}
       <div
         onClick={() => router.push("/")}
@@ -44,6 +38,17 @@ function Header() {
           <MenuIcon className="h-6 text-gray-600 cursor-pointer" />
           <UserCircleIcon className="h-6 text-gray-600 cursor-pointer" />
         </div>
+      </div>
+
+      {/* Divider */}
+      <div className="border border-gray-300 mt-2 col-span-full"></div>
+
+      {/* Bottom */}
+      <div className="pt-2 col-span-3 hidden gap-x-3 md:inline-flex whitespace-nowrap">
+        <p className="button">Cancellation Flexibility</p>
+        <p className="button">Type of Place</p>
+        <p className="button">Price</p>
+        <p className="button">More Filters</p>
       </div>
     </header>
   );

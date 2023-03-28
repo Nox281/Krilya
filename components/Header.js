@@ -17,7 +17,7 @@ function Header() {
       {/* Left */}
       <div
         onClick={() => router.push("/")}
-        className="relative flex items-center h-11 w-[53px]"
+        className="relative flex items-center h-11 w-12"
       >
         <Image
           src="/../public/favicon.ico"

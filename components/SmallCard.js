@@ -13,12 +13,12 @@ const cairo700 = Cairo({
 
 function SmallCard({ img, name }) {
   return (
-    <div className="items-center text-center  sm:ml-2 mt-5 rounded-xl mb-2 sm:hover:shadow-gray-400 bg-gray-100 cursor-pointer shadow-md sm:hover:scale-105 transition duration-200 ease-out">
+    <div className="items-center text-center  sm:ml-2 mt-5 rounded-xl mb-2 bg-white cursor-pointer hover:shadow-sm shadow-md sm:hover:scale-105 transition duration-200 ease-out">
       <div className="relative h-20 w-28 sm:h-40 sm:w-64">
         <Image
           src={img}
           layout="fill"
-          className="object-cover shadow-md rounded-t-xl pointer-events-none"
+          className="object-cover shadow-sm rounded-t-xl pointer-events-none"
         />
       </div>
       <div>

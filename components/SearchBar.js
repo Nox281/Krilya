@@ -51,11 +51,11 @@ function SearchBar() {
           onChange={(e) => setSearchInput(e.target.value)}
           type="text"
           placeholder="Search a Car"
-          className="h-7 text-md placeholder-gray-400 text-gray-900 pl-4 outline-none bg-transparent w-10/12 "
+          className="h-7 text-md selection:bg-gray-300 placeholder-gray-400 text-gray-900 pl-4 outline-none bg-transparent w-10/12 "
         />
         <SearchIcon
           onClick={handleSearch}
-          className="inline h-8 cursor-pointer ml-auto text-white bg-fuchsia-400 rounded-full p-1.5 mx-0.5 mb-0.5 transform transition duration-150"
+          className={`inline h-8 cursor-pointer ml-auto text-white bg-fuchsia-500 rounded-full p-1.5 -mt-0.5 mx-0.25 mb-0.25 ${searchInput && `hover:bg-fuchsia-700`} transform transition duration-150`}
         />
       </div>
       {searchInput && (

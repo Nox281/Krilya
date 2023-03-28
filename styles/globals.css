@@ -10,8 +10,8 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 217, 219, 222;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 246, 246, 246;
+  --background-end-rgb: 246, 246, 246;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -112,6 +112,6 @@ a {
 
 @layer components {
   .button {
-    @apply text-sm border border-gray-300 px-4 py-2 bg-white rounded-full cursor-pointer hover:shadow-lg active:bg-gray-100 active:scale-95 transform transition duration-100 select-none ease-out;
+    @apply text-sm border border-gray-500 px-3 py-1 hover:bg-white rounded-full cursor-pointer active:bg-gray-100 active:scale-95 transform transition duration-75 select-none ease-out;
   }
 }
