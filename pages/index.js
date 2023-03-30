@@ -26,7 +26,7 @@ export default function Home({ exploreData, cardsData }) {
       </Head>
       <Header />
       <Banner className={`relative ${poppins700.className}`} />
-      <main className={`select-none max-w-7xl mx-auto px-8 sm:px-16`}>
+      <main className={`select-none max-w-7xl mx-auto px-8 sm:px-16 `}>
         <section className="pt-6 -mx-4 sm:mx-0">
           <h2 className={`text-2xl pb-5  ${poppins700.className}`}>
             Search by Make

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { HeartIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
-import Slider from "react-slick";
 
 const poppins300 = Poppins({
   subsets: ["latin"],
