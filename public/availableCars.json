@@ -5,8 +5,8 @@
     "title": "BMW X6M",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.97,
-    "price": "2300 MAD / day",
-    "total": "6900 MAD total",
+    "price": "2300",
+    "total": "6900",
     "long": -0.095091,
     "lat": 51.48695
   },
@@ -16,8 +16,8 @@
     "title": "Porsche GT3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.09,
-    "price": "2200 MAD / day",
-    "total": "6600 MAD total",
+    "price": "2200",
+    "total": "6600",
     "long": -0.0022275,
     "lat": 51.5421655
   },
@@ -27,8 +27,8 @@
     "title": "Ferrari Stradale",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 3.81,
-    "price": "4500 MAD / day",
-    "total": "13500 MAD total",
+    "price": "4500",
+    "total": "13500",
     "long": -0.135638,
     "lat": 51.521916
   },
@@ -38,8 +38,8 @@
     "title": "BMW 2 Series",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.85,
-    "price": "550 MAD / day",
-    "total": "1650 MAD total",
+    "price": "550",
+    "total": "1650",
     "long": -0.0118446,
     "lat": 51.6253994
   },
@@ -49,8 +49,8 @@
     "title": "Mclaren 765LT",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.97,
-    "price": "3900 MAD / day",
-    "total": "11700 MAD total",
+    "price": "3900",
+    "total": "11700",
     "long": -0.0953648,
     "lat": 51.487963
   },
@@ -60,8 +60,8 @@
     "title": "Audi S3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 3.59,
-    "price": "1300 MAD / day",
-    "total": "3900 MAD total",
+    "price": "1300",
+    "total": "3900",
     "long": -0.0836488,
     "lat": 51.3958426
   },
@@ -71,8 +71,8 @@
     "title": "Renault Megane RS",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.16,
-    "price": "2300 MAD / day",
-    "total": "6900 MAD total",
+    "price": "2300",
+    "total": "6900",
     "long": -0.0697821,
     "lat": 51.758882
   },
@@ -82,8 +82,8 @@
     "title": "Lamborghini Urus",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.65,
-    "price": "2750 MAD / day",
-    "total": "8250 MAD total",
+    "price": "2750",
+    "total": "8250",
     "long": -0.0362944,
     "lat": 51.5987626
   }

@@ -43,8 +43,8 @@ function Search({ searchResults }) {
                   title={title}
                   description={description}
                   star={star}
-                  price={price}
-                  total={total}
+                  price={`${price} MAD/day`}
+                  total={`${total} MAD in total`}
                 />
               )
             )}
@@ -52,7 +52,7 @@ function Search({ searchResults }) {
         </section>
 
         <section className="hidden pt-12 md:pt-[116px] lg:flex w-full">
-          <SideMap />
+          <SideMap searchResults={searchResults} />
         </section>
       </main>
     </div>
