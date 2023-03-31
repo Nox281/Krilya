@@ -53,8 +53,8 @@ function Search({ searchResults }) {
                 total,
               }) => (
                 <InfoCard
-                  key={img}
-                  img={...imgs} // pass an array of images
+                  key={imgs[0]}
+                  img={[...imgs]}
                   location={location}
                   title={title}
                   description={description}
