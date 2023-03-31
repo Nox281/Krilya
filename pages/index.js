@@ -34,27 +34,9 @@ export default function Home({ exploreData, cardsData }) {
           {/* Data endpoint fetching */}
 
           <div className="flex space-x-4 overflow-x-scroll md:scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-2 pr-3 pb-3 -ml-2 scroll-smooth">
-            {exploreData?.map(
-              <Slider
-                className="relative h-52 w-full sm:h-36 sm:w-56 xl:h-40 xl:w-60 flex-shrink-0"
-                dots={true}
-                infinite={true}
-                speed={500}
-                slidesToShow={1}
-                slidesToScroll={1}
-              >
-                {img.map((image, index) => (
-                  <div key={index}>
-                    <Image
-                      src={image}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-md transform transition duration-150 ease-in-out"
-                    />
-                  </div>
-                ))}
-              </Slider>
-            )}
+            {exploreData?.map(({ img, name }) => (
+              <SmallCard key={img} img={img} name={name} />
+            ))}
           </div>
         </section>
 
