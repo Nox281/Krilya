@@ -1,6 +1,10 @@
 [
   {
-    "img": "https://i.imgur.com/A4nEc3b.jpg",
+    "imgs": [
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "BMW X6M",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -11,7 +15,11 @@
     "lat": 51.48695
   },
   {
-    "img": "https://i.imgur.com/K32vK09.jpg",
+    "imgs": [
+      "https://i.imgur.com/K32vK09.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Porsche GT3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -22,7 +30,11 @@
     "lat": 51.5421655
   },
   {
-    "img": "https://i.imgur.com/tZ52rqB.jpg",
+    "imgs": [
+      "https://i.imgur.com/tZ52rqB.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Ferrari Stradale",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -33,7 +45,11 @@
     "lat": 51.521916
   },
   {
-    "img": "https://i.imgur.com/lQ9uLwY.jpg",
+    "imgs": [
+      "https://i.imgur.com/lQ9uLwY.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "BMW 2 Series",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -44,7 +60,11 @@
     "lat": 51.6253994
   },
   {
-    "img": "https://i.imgur.com/Qm8hFq1.jpg",
+    "imgs": [
+      "https://i.imgur.com/Qm8hFq1.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Mclaren 765LT",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -55,7 +75,11 @@
     "lat": 51.487963
   },
   {
-    "img": "https://i.imgur.com/GbG382P.jpg",
+    "imgs": [
+      "https://i.imgur.com/GbG382P.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Audi S3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -66,7 +90,11 @@
     "lat": 51.3958426
   },
   {
-    "img": "https://i.imgur.com/OAqbluO.jpg",
+    "imgs": [
+      "https://i.imgur.com/OAqbluO.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Renault Megane RS",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
@@ -77,7 +105,11 @@
     "lat": 51.758882
   },
   {
-    "img": "https://i.imgur.com/8jsHPjj.jpg",
+    "imgs": [
+      "https://i.imgur.com/8jsHPjj.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg",
+      "https://i.imgur.com/A4nEc3b.jpg"
+    ],
     "location": "Tetouan",
     "title": "Lamborghini Urus",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",

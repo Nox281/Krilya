@@ -1,15 +1,20 @@
 import * as React from "react";
+import { useState } from "react";
 import Header2 from "@/components/Header2";
 import { useRouter } from "next/router";
 import format from "date-fns/format";
 import InfoCard from "@/components/InfoCard";
 import "mapbox-gl/dist/mapbox-gl.css";
 import SideMap from "@/components/SideMap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MAPBOX_TOKEN =
   "eyJ1Ijoibm94NDk5IiwiYSI6ImNsZnIxbHA0MzA0Mm8zeG54OGtudWs3bHcifQ";
 
 function Search({ searchResults }) {
+  const [hoveredCard, setHoveredCard] = useState(null);
   const router = useRouter();
   const { location, startDate, endDate } = router.query;
 
@@ -22,6 +27,9 @@ function Search({ searchResults }) {
     formattedEndDate = format(new Date(endDate), "dd MMMM yyyy");
     range = `${formattedStartDate} - ${formattedEndDate}`;
   }
+
+  const [isMapHidden, setIsMapHidden] = useState(true);
+
   return (
     <div>
       <Header2 />
@@ -35,16 +43,26 @@ function Search({ searchResults }) {
               Cars in {location[0].toUpperCase() + location.slice(1)}
             </h1>
             {searchResults.map(
-              ({ img, location, title, description, star, price, total }) => (
+              ({
+                imgs,
+                location,
+                title,
+                description,
+                star,
+                price,
+                total,
+              }) => (
                 <InfoCard
                   key={img}
-                  img={img}
+                  img={...imgs} // pass an array of images
                   location={location}
                   title={title}
                   description={description}
                   star={star}
                   price={`${price} MAD/day`}
                   total={`${total} MAD in total`}
+                  onMouseEnter={() => setHoveredCard(index)}
+                  onMouseLeave={() => setHoveredCard(null)}
                 />
               )
             )}
@@ -52,7 +70,7 @@ function Search({ searchResults }) {
         </section>
 
         <section className="hidden pt-12 md:pt-[116px] lg:flex w-full">
-          <SideMap searchResults={searchResults} />
+          <SideMap searchResults={searchResults} hoveredCard={hoveredCard} />
         </section>
       </main>
     </div>

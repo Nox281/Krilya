@@ -37,19 +37,24 @@ function SideMap({ searchResults }) {
           <Marker
             longitude={result.long}
             latitude={result.lat}
-            className={"hover:scale-50 cursor-pointer"}
             anchor="bottom"
             onClick={() => handleMarkerClick(result)}
           >
-            <img
-              src="./popUp.webp"
-              className="cursor-pointer h-10 drop-shadow-md"
-            ></img>
-            <p
-              className={`cursor-pointer absolute w-full text-center top-[7px] text-[16px] whitespace-nowrap ${poppins600.className}`}
+            <div
+              className={`cursor-pointer  transition hover:invert ${
+                popupInfo &&
+                popupInfo.long === result.long &&
+                popupInfo.lat === result.lat &&
+                "opacity-0"
+              }`}
             >
-              {result.price}
-            </p>
+              <img src="./popUp.webp" className="h-10 drop-shadow-md"></img>
+              <p
+                className={`absolute w-full text-center top-[7px] text-[16px] whitespace-nowrap ${poppins600.className}`}
+              >
+                {result.price}
+              </p>
+            </div>
           </Marker>
           {popupInfo &&
             popupInfo.long === result.long &&
