@@ -51,7 +51,7 @@ function SearchBar() {
           onChange={(e) => setSearchInput(e.target.value)}
           type="text"
           placeholder="Search a Car"
-          className={`h-[26px] text-md selection:bg-gray-300 placeholder-gray-400 text-gray-900 pl-4 outline-none bg-transparent w-10/12 ${searchInput && `w-full mr-4`}`}
+          className={`h-[26px] text-md selection:bg-gray-300 placeholder-gray-400 text-gray-900 pl-4 border-none bg-transparent w-10/12 ${searchInput && `w-full sm:mr-4`}`}
         />
         <SearchIcon
           className={`inline h-8 cursor-pointer ml-auto text-white bg-fuchsia-500 rounded-full p-1.5 -mt-0.5 mx-0.25 mb-0.25 ${

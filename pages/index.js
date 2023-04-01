@@ -31,8 +31,8 @@ export default function Home({ exploreData, cardsData }) {
           <h2 className={`text-2xl pb-5  ${poppins700.className}`}>
             Search by Make
           </h2>
-          {/* Data endpoint fetching */}
 
+          {/* Data endpoint fetching */}
           <div className="flex space-x-4 overflow-x-scroll md:scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full -mr-2 pr-3 pb-3 -ml-2 scroll-smooth">
             {exploreData?.map(({ img, name }) => (
               <SmallCard key={img} img={img} name={name} />
@@ -40,7 +40,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
 
-        <section className=" -mx-4 sm:mx-0">
+        <section className="-mx-4 sm:mx-0">
           <h2 className={`text-2xl py-8 ${poppins700.className}`}>
             Search by Location
           </h2>

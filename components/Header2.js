@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef, useState, Fragment } from "react";
 import Image from "next/image";
 import { MenuIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import SearchBar from "./SearchBar";
+import { Transition, Menu } from "@headlessui/react";
 
 function Header() {
   const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   return (
     <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 transition duration-200">
@@ -34,10 +38,55 @@ function Header() {
           Become a Host
         </p>
         {/* <GlobeAltIcon className="text-gray-500 h-6 cursor-pointer" /> */}
-        <div className="flex items-center space-x-2 border-2 rounded-full p-2">
-          <MenuIcon className="h-6 text-gray-600 cursor-pointer" />
-          <UserCircleIcon className="h-6 text-gray-600 cursor-pointer" />
-        </div>
+        <Menu as="div" className="relative">
+          <div
+            className="flex items-center space-x-2 cursor-pointer border-2 hover:border-gray-400 rounded-full p-2 transition"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <MenuIcon className="h-6 text-gray-600 " />
+            <UserCircleIcon className="h-6 text-gray-600" />
+          </div>
+
+          <Transition
+            show={isOpen}
+            enter="transition ease-out duration-100 transform"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="transition ease-in duration-75 transform"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+            onClose={() => setIsOpen(false)}
+          >
+            <div
+              className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              ref={dropdownRef}
+            >
+              {/* Dropdown menu items will go here */}
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? "bg-gray-100" : ""
+                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
+                  >
+                    Profile
+                  </button>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? "bg-gray-100" : ""
+                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
+                  >
+                    Logout
+                  </button>
+                )}
+              </Menu.Item>
+            </div>
+          </Transition>
+        </Menu>
       </div>
 
       {/* Divider */}

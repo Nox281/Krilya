@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Map, NavigationControl, Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 import { Poppins } from "next/font/google";
+import { Carousel } from "flowbite-react";
 
 const poppins600 = Poppins({
   subsets: ["latin"],
@@ -70,7 +71,13 @@ function SideMap({ searchResults }) {
                   <p className={`text-lg font-bold ${poppins600.className}`}>
                     {result.title}
                   </p>
-                  <img src={result.img}></img>
+                  <Carousel className="h-40 w-full">
+                    {result.imgs.map((image, index) => (
+                      <div key={index}>
+                        <img src={image}></img>
+                      </div>
+                    ))}
+                  </Carousel>
                   <p className="text-md">{result.description}</p>
                   <p className={`text-lg font-bold ${poppins600.className}`}>
                     {result.price}

@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 const MAPBOX_TOKEN =
   "eyJ1Ijoibm94NDk5IiwiYSI6ImNsZnIxbHA0MzA0Mm8zeG54OGtudWs3bHcifQ";
 
-function Search({ searchResults }) {
+function Search({ imgs,searchResults }) {
   const [hoveredCard, setHoveredCard] = useState(null);
   const router = useRouter();
   const { location, startDate, endDate } = router.query;
@@ -27,8 +27,6 @@ function Search({ searchResults }) {
     formattedEndDate = format(new Date(endDate), "dd MMMM yyyy");
     range = `${formattedStartDate} - ${formattedEndDate}`;
   }
-
-  const [isMapHidden, setIsMapHidden] = useState(true);
 
   return (
     <div>
@@ -70,7 +68,7 @@ function Search({ searchResults }) {
         </section>
 
         <section className="hidden pt-12 md:pt-[116px] lg:flex w-full">
-          <SideMap searchResults={searchResults} hoveredCard={hoveredCard} />
+          <SideMap img={imgs} searchResults={searchResults} hoveredCard={hoveredCard} />
         </section>
       </main>
     </div>

@@ -8,6 +8,7 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
+import { Dropdown } from "flowbite-react";
 
 function Header() {
   const router = useRouter();
@@ -34,9 +35,9 @@ function Header() {
           Become a Host
         </p>
         {/* <GlobeAltIcon className="text-gray-500 h-6 cursor-pointer" /> */}
-        <div className="flex items-center space-x-2 border-2 rounded-full p-2">
-          <MenuIcon className="h-6 text-gray-600 cursor-pointer" />
-          <UserCircleIcon className="h-6 text-gray-600 cursor-pointer" />
+        <div className="flex items-center space-x-2 cursor-pointer border-2 hover:border-gray-400 rounded-full p-2 transition">
+          <MenuIcon className="h-6 text-gray-600 " />
+          <UserCircleIcon className="h-6 text-gray-600" />
         </div>
       </div>
     </header>
