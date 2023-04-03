@@ -12,7 +12,11 @@
     "price": "2300",
     "total": "6900",
     "long": -0.095091,
-    "lat": 51.48695
+    "lat": 51.48695,
+    "owner": "Renting Agency",
+    "ownerID": "123456",
+    "ownerLong": -0.1,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -20,14 +24,18 @@
       "https://i.imgur.com/GbG382P.jpg",
       "https://i.imgur.com/tZ52rqB.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "Porsche GT3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.09,
     "price": "2200",
     "total": "6600",
     "long": -0.0022275,
-    "lat": 51.5421655
+    "lat": 51.5421655,
+    "owner": "Renting Agency",
+    "ownerID": "123456",
+    "ownerLong": -0.1,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -35,14 +43,18 @@
       "https://i.imgur.com/A4nEc3b.jpg",
       "https://i.imgur.com/lQ9uLwY.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "Ferrari Stradale",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 3.81,
     "price": "4500",
     "total": "13500",
     "long": -0.135638,
-    "lat": 51.521916
+    "lat": 51.521916,
+    "owner": "Renting Agency",
+    "ownerID": "123456",
+    "ownerLong": -0.1,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -50,14 +62,18 @@
       "https://i.imgur.com/A4nEc3b.jpg",
       "https://i.imgur.com/Qm8hFq1.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "BMW 2 Series",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.85,
     "price": "550",
     "total": "1650",
     "long": -0.0118446,
-    "lat": 51.6253994
+    "lat": 51.6253994,
+    "owner": "Renting Agency",
+    "ownerID": "123456",
+    "ownerLong": -0.1,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -65,14 +81,18 @@
       "https://i.imgur.com/tZ52rqB.jpg",
       "https://i.imgur.com/A4nEc3b.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "Mclaren 765LT",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.97,
     "price": "3900",
     "total": "11700",
     "long": -0.0953648,
-    "lat": 51.487963
+    "lat": 51.487963,
+    "owner": "Renting Agency",
+    "ownerID": "123456",
+    "ownerLong": -0.1,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -80,14 +100,18 @@
       "https://i.imgur.com/OAqbluO.jpg",
       "https://i.imgur.com/tZ52rqB.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "Audi S3",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 3.59,
     "price": "1300",
     "total": "3900",
     "long": -0.0836488,
-    "lat": 51.3958426
+    "lat": 51.3958426,
+    "owner": "Another Agency",
+    "ownerID": "133456",
+    "ownerLong": -0.095,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -95,14 +119,18 @@
       "https://i.imgur.com/A4nEc3b.jpg",
       "https://i.imgur.com/Qm8hFq1.jpg"
     ],
-    "location": "Tetouan",
+    "location": "Tanger",
     "title": "Renault Megane RS",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.16,
     "price": "2300",
     "total": "6900",
     "long": -0.0697821,
-    "lat": 51.758882
+    "lat": 51.758882,
+    "owner": "Another Agency",
+    "ownerID": "133456",
+    "ownerLong": -0.095,
+    "ownerLat": 51.2
   },
   {
     "imgs": [
@@ -117,6 +145,10 @@
     "price": "2750",
     "total": "8250",
     "long": -0.0362944,
-    "lat": 51.5987626
+    "lat": 51.5987626,
+    "owner": "Another Agency",
+    "ownerID": "133456",
+    "ownerLong": -0.095,
+    "ownerLat": 51.2
   }
 ]

@@ -1,4 +1,4 @@
-import React, { useRef, useState, Fragment } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { MenuIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
@@ -9,7 +9,13 @@ function Header() {
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 transition duration-200">
@@ -59,7 +65,8 @@ function Header() {
           >
             <div
               className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              ref={dropdownRef}
+              onKeyDown={handleKeyDown}
+              ref={menuRef}
             >
               {/* Dropdown menu items will go here */}
               <Menu.Item>
@@ -67,7 +74,7 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
-                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
+                    } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-t-md`}
                   >
                     Profile
                   </button>
@@ -78,7 +85,7 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
-                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
+                    } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-b-md`}
                   >
                     Logout
                   </button>
