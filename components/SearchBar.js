@@ -44,27 +44,29 @@ function SearchBar() {
   };
 
   return (
-    <div className="relative z-40 rounded-3xl drop-shadow  focus:bg-opacity-10 transition-all duration-500">
-      <div className="flex rounded-full  bg-gray-100 p-1 pt-1.5 hover:bg-white focus-within:shadow-sm sm:focus-within:w-auto focus-within:bg-white transition-all duration-500">
+    <div className="relative z-40 rounded-3xl focus:bg-opacity-10 transition-all duration-500">
+      <div className="flex rounded-full border-2 bg-white p-1 pt-1.5 hover:border-teal-500 bg-opacity-85 focus-within:border-teal-500 sm:focus-within:w-auto focus-within:bg-white transition-all duration-150">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           type="text"
           placeholder="Search a Car"
-          className={`h-[26px] text-md selection:bg-gray-300 placeholder-gray-400 text-gray-900 pl-4 border-none bg-transparent w-10/12 ${searchInput && `w-full sm:mr-4`}`}
+          className={`h-[28px] text-md selection:bg-teal-300 placeholder-gray-500 text-teal-900 pl-4 border-none bg-transparent w-10/12 ${
+            searchInput && `w-full sm:mr-4`
+          }`}
         />
         <SearchIcon
-          className={`inline h-8 cursor-pointer ml-auto text-white bg-fuchsia-500 rounded-full p-1.5 -mt-0.5 mx-0.25 mb-0.25 ${
+          className={`inline h-8 cursor-pointer ml-auto text-white bg-teal-500 rounded-full p-1.5 -mt-0.5 mx-0.25 mb-0.25 ${
             searchInput && `hidden`
           } transform transition duration-150`}
         />
       </div>
       {searchInput && (
-        <div className="rounded-2xl overflow-hidden mt-4 opacity-100 transition-all duration-500">
+        <div className="rounded-2xl overflow-hidden mt-4 opacity-100 border-2 transition-all duration-500">
           <DateRange
             ranges={[selectionRange]}
             minDate={new Date()}
-            rangeColors={["#e879f9"]}
+            rangeColors={["#26A69A"]}
             onChange={handleSelect}
             className="transition-all duration-200 "
           />
