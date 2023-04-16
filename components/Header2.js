@@ -9,23 +9,7 @@ function Header() {
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
-<<<<<<< HEAD
-  const menuRef = useRef(null);
-
-  const [showLoginModal, setShowLoginModal] = useState(false);
-
-  const handleLoginClick = () => {
-    setShowLoginModal(true);
-  };
-
-  const handleKeyDown = (event) => {
-    if (event.key === document) {
-      setIsOpen(false);
-    }
-  };
-=======
   const dropdownRef = useRef(null);
->>>>>>> parent of ffaf64a (m)
 
   return (
     <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 transition duration-200">
@@ -94,22 +78,7 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
-<<<<<<< HEAD
-                    } block px-4 py-2 text-sm md:hidden text-gray-700 w-full text-left rounded-t-md`}
-                  >
-                    Become a Host
-                  </button>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-gray-100" : ""
-                    } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-b-md`}
-=======
                     } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
->>>>>>> parent of ffaf64a (m)
                   >
                     Logout
                   </button>
