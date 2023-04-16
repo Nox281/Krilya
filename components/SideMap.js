@@ -71,16 +71,17 @@ function SideMap({ searchResults }) {
                   <p className={`text-lg font-bold ${poppins600.className}`}>
                     {result.title}
                   </p>
+<<<<<<< HEAD
                   <Carousel
                     indicators={false}
-                    className=" relative h-36 w-full justify-center"
+                    className=" relative h-32 w-full justify-center"
                   >
+=======
+                  <Carousel className="h-40 w-full">
+>>>>>>> parent of ffaf64a (m)
                     {result.imgs.map((image, index) => (
                       <div key={index}>
-                        <img
-                          src={image}
-                          className=" object-cover h-52 sm:h-36 sm:w-56 xl:h-40 xl:w-72 rounded-md"
-                        ></img>
+                        <img src={image}></img>
                       </div>
                     ))}
                   </Carousel>

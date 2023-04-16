@@ -1,50 +1,47 @@
-import React, { Fragment } from "react";
-import { Navbar, Dropdown } from "flowbite-react";
-import { Avatar } from "flowbite-react";
+import React from "react";
+import Image from "next/image";
+import {
+  SearchIcon,
+  MenuIcon,
+  UserCircleIcon,
+  UsersIcon,
+  GlobeAltIcon,
+} from "@heroicons/react/solid";
+import { useRouter } from "next/router";
+import { Dropdown } from "flowbite-react";
 
-export default function NavigationBar() {
-  const [openNav, setOpenNav] = React.useState(false);
+function Header() {
+  const router = useRouter();
 
   return (
-    <>
-      <Navbar fluid={true} rounded={true} className="fixed top-0 z-50 w-full opacity-90 hover:opacity-100 transition-all focus-within:opacity-100">
-        <Navbar.Brand href="/">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Krilya
-          </span>
-        </Navbar.Brand>
-        <div className="flex md:order-2">
-          <Dropdown
-            arrowIcon={false}
-            inline={true}
-            label={
-              <Avatar
-                alt="User settings"
-                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                rounded={true}
-              />
-            }
-          >
-            <Dropdown.Header>
-              <span className="block text-lg font-bold">Nox499</span>
-              <span className="block truncate text-sm">
-                Ayoub@Rbahi.com
-              </span>
-            </Dropdown.Header>
-            <Dropdown.Item>Login</Dropdown.Item>
-            <Dropdown.Item>Dashboard</Dropdown.Item>
-            <Dropdown.Item>Settings</Dropdown.Item>
-            <Dropdown.Item>Earnings</Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item>Sign out</Dropdown.Item>
-          </Dropdown>
+    <header className="fixed flex w-full top-0 z-50 shadow-md my-auto bg-white p-3 opacity-80 hover:opacity-100 transition duration-200 focus-within:opacity-100">
+      {/* Left */}
+      <div
+        onClick={() => router.push("/")}
+        className="relative flex items-center h-11 w-12"
+      >
+        <Image
+          src="/../public/favicon.ico"
+          layout="fill"
+          objectFit="contain"
+          objectPosition="left"
+          className="cursor-pointer"
+        />
+      </div>
+
+      {/* Right */}
+      <div className="flex items-center space-x-4 justify-end pl-5 w-full">
+        <p className="inline-flex  text-gray-900 cursor-pointer">
+          Become a Host
+        </p>
+        {/* <GlobeAltIcon className="text-gray-500 h-6 cursor-pointer" /> */}
+        <div className="flex items-center space-x-2 cursor-pointer border-2 hover:border-gray-400 rounded-full p-2 transition">
+          <MenuIcon className="h-6 text-gray-600 " />
+          <UserCircleIcon className="h-6 text-gray-600" />
         </div>
-      </Navbar>
-    </>
+      </div>
+    </header>
   );
 }
+
+export default Header;
