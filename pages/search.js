@@ -34,9 +34,7 @@ function Search({ imgs, searchResults }) {
       <main className="lg:grid lg:grid-cols-2 pl-4">
         <section className="h-screen pt-20 md:pt-[116px]">
           <div className="scrollbar-thin h-full mr-1 pr-1 md:overflow-y-scroll scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scroll-smooth">
-            <p className="text-xs pt-2">
-              {searchResults.length} cars available in {range}
-            </p>
+            <p className="text-xs pt-2">{searchResults.length} cars available in {range}</p>
 
             <h1 className="text-3xl font-semibold mt-0 mb-3">
               Cars in {location[0].toUpperCase() + location.slice(1)}

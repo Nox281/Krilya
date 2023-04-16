@@ -9,6 +9,7 @@ function Header() {
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
+<<<<<<< HEAD
   const menuRef = useRef(null);
 
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -22,6 +23,9 @@ function Header() {
       setIsOpen(false);
     }
   };
+=======
+  const dropdownRef = useRef(null);
+>>>>>>> parent of ffaf64a (m)
 
   return (
     <header className="fixed grid grid-cols-3 w-full top-0 z-50 shadow-md my-auto bg-white p-3 transition duration-200">
@@ -71,8 +75,7 @@ function Header() {
           >
             <div
               className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              onKeyDown={handleKeyDown}
-              ref={menuRef}
+              ref={dropdownRef}
             >
               {/* Dropdown menu items will go here */}
               <Menu.Item>
@@ -80,7 +83,7 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
-                    } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-t-md`}
+                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
                   >
                     Profile
                   </button>
@@ -91,6 +94,7 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
+<<<<<<< HEAD
                     } block px-4 py-2 text-sm md:hidden text-gray-700 w-full text-left rounded-t-md`}
                   >
                     Become a Host
@@ -103,6 +107,9 @@ function Header() {
                     className={`${
                       active ? "bg-gray-100" : ""
                     } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-b-md`}
+=======
+                    } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}
+>>>>>>> parent of ffaf64a (m)
                   >
                     Logout
                   </button>
