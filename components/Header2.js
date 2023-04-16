@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, Fragment } from "react";
 import Image from "next/image";
-import { MenuIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/solid";
+import { UserCircleIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import SearchBar from "./SearchBar";
 import { Transition, Menu } from "@headlessui/react";
@@ -12,8 +12,14 @@ function Header() {
 <<<<<<< HEAD
   const menuRef = useRef(null);
 
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLoginModal(true);
+  };
+
   const handleKeyDown = (event) => {
-    if (event.key === "Escape") {
+    if (event.key === document) {
       setIsOpen(false);
     }
   };
@@ -44,17 +50,17 @@ function Header() {
 
       {/* Right */}
       <div className="flex items-center h-11 space-x-4 justify-end pl-5 w-full">
-        <p className="hidden sm:inline-flex text-gray-900 cursor-pointer">
+        <p className="items-center hidden md:flex whitespace-nowrap space-x-2 cursor-pointer border-2 hover:border-gray-700 rounded-md p-1 px-3 transition">
           Become a Host
         </p>
         {/* <GlobeAltIcon className="text-gray-500 h-6 cursor-pointer" /> */}
         <Menu as="div" className="relative">
           <div
-            className="flex items-center space-x-2 cursor-pointer border-2 hover:border-gray-400 rounded-full p-2 transition"
+            className="flex items-center space-x-2 cursor-pointer border-2 hover:border-gray-700 rounded-md p-1 px-3 transition"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <MenuIcon className="h-6 text-gray-600 " />
-            <UserCircleIcon className="h-6 text-gray-600" />
+            <p>Login</p>
+            <UserCircleIcon className="h-6 text-gray-800" />
           </div>
 
           <Transition
@@ -89,7 +95,6 @@ function Header() {
                     className={`${
                       active ? "bg-gray-100" : ""
 <<<<<<< HEAD
-<<<<<<< HEAD
                     } block px-4 py-2 text-sm md:hidden text-gray-700 w-full text-left rounded-t-md`}
                   >
                     Become a Host
@@ -101,8 +106,6 @@ function Header() {
                   <button
                     className={`${
                       active ? "bg-gray-100" : ""
-=======
->>>>>>> parent of 2ae588e (added login modal, different carousel)
                     } block px-4 py-2 text-sm text-gray-700 w-full text-left rounded-b-md`}
 =======
                     } block px-4 py-2 text-sm text-gray-700 w-full rounded-md text-left`}

@@ -18,7 +18,7 @@ const poppins600 = Poppins({
 function InfoCard({ img, location, title, description, star, price, total }) {
   return (
     <div
-      className={`${poppins300.className} block sm:flex sm:pr-3 hover:bg-white mb-3 rounded-lg border sm:border-y mr-2 md:mr-2 border-gray-300 cursor-pointer hover:opacity-90 hover:shadow-lg transform transition duration-150`}
+      className={`${poppins300.className} block sm:flex sm:pr-3 hover:bg-white mb-3 rounded-md border mr-2 md:mr-2 border-gray-400 cursor-pointer hover:opacity-90 hover:shadow-lg transform transition duration-150`}
     >
       <div className="relative h-52 w-full sm:h-36 sm:w-56 xl:h-40 xl:w-60 flex-shrink-0">
         <Carousel>
@@ -29,15 +29,11 @@ function InfoCard({ img, location, title, description, star, price, total }) {
                 height={1000}
 <<<<<<< HEAD
                 width={1500}
-<<<<<<< HEAD
                 className=" object-cover h-52 sm:h-36 sm:w-56 xl:h-40 xl:w-72"
 =======
                 width={1000}
                 className="inline-flex flex-shrink-0 h-auto w-screen rounded-md object-fit text-center"
 >>>>>>> parent of ffaf64a (m)
-=======
-                className=" object-cover h-52 sm:h-36 sm:w-56 xl:h-40 xl:w-72 rounded-md"
->>>>>>> parent of 2ae588e (added login modal, different carousel)
               />
             </div>
           ))}
