@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { Map, NavigationControl, Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 import { Poppins } from "next/font/google";
@@ -71,17 +72,18 @@ function SideMap({ searchResults }) {
                   <p className={`text-lg font-bold ${poppins600.className}`}>
                     {result.title}
                   </p>
-<<<<<<< HEAD
                   <Carousel
                     indicators={false}
-                    className=" relative h-32 w-full justify-center"
+                    className=" relative h-36 w-full justify-center"
                   >
-=======
-                  <Carousel className="h-40 w-full">
->>>>>>> parent of ffaf64a (m)
                     {result.imgs.map((image, index) => (
                       <div key={index}>
-                        <img src={image}></img>
+                        <Image
+                          src={image}
+                          height={1000}
+                          width={1500}
+                          className=" object-cover h-36"
+                        />
                       </div>
                     ))}
                   </Carousel>

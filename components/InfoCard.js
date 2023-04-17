@@ -27,13 +27,8 @@ function InfoCard({ img, location, title, description, star, price, total }) {
               <Image
                 src={image}
                 height={1000}
-<<<<<<< HEAD
                 width={1500}
                 className=" object-cover h-52 sm:h-36 sm:w-56 xl:h-40 xl:w-72"
-=======
-                width={1000}
-                className="inline-flex flex-shrink-0 h-auto w-screen rounded-md object-fit text-center"
->>>>>>> parent of ffaf64a (m)
               />
             </div>
           ))}
