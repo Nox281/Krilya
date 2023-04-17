@@ -74,7 +74,7 @@ function SideMap({ searchResults }) {
                   </p>
                   <Carousel
                     indicators={false}
-                    className=" relative h-36 w-full justify-center"
+                    className=" relative h-32 w-full justify-center"
                   >
                     {result.imgs.map((image, index) => (
                       <div key={index}>
@@ -82,7 +82,7 @@ function SideMap({ searchResults }) {
                           src={image}
                           height={1000}
                           width={1500}
-                          className=" object-cover h-36"
+                          className=" object-cover h-32"
                         />
                       </div>
                     ))}

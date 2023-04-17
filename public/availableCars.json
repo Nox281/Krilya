@@ -1,9 +1,11 @@
 [
   {
     "imgs": [
-      "https://i.imgur.com/A4nEc3b.jpg",
-      "https://i.imgur.com/GbG382P.jpg",
-      "https://i.imgur.com/lQ9uLwY.jpg"
+      "https://i.imgur.com/4FhutoH.jpg",
+      "https://i.imgur.com/iZLnqWW.jpg",
+      "https://i.imgur.com/B6PO4Ie.jpg",
+      "https://i.imgur.com/103wD6y.jpg",
+      "https://i.imgur.com/YOAmS8N.jpg"
     ],
     "location": "Tetouan",
     "title": "BMW X6M",
@@ -16,9 +18,11 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/K32vK09.jpg",
-      "https://i.imgur.com/GbG382P.jpg",
-      "https://i.imgur.com/tZ52rqB.jpg"
+      "https://i.imgur.com/HstoegH.jpg",
+      "https://i.imgur.com/HMGQ5Q2.jpg",
+      "https://i.imgur.com/drB5I0g.jpg",
+      "https://i.imgur.com/2OYmjYb.jpg",
+      "https://i.imgur.com/AOUpOyY.jpg"
     ],
     "location": "Tetouan",
     "title": "Porsche GT3",
@@ -31,12 +35,15 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/tZ52rqB.jpg",
-      "https://i.imgur.com/A4nEc3b.jpg",
-      "https://i.imgur.com/lQ9uLwY.jpg"
+      "https://i.imgur.com/Ztn8Wgn.jpg",
+      "https://i.imgur.com/7UC2P9i.jpg",
+      "https://i.imgur.com/JVWeYKi.jpg",
+      "https://i.imgur.com/j7moXLG.jpg",
+      "https://i.imgur.com/cRoVGBE.jpg",
+      "https://i.imgur.com/pM4NSAL.jpg"
     ],
     "location": "Tetouan",
-    "title": "Ferrari Stradale",
+    "title": "Ferrari SF90 Stradale",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 3.81,
     "price": "4500",
@@ -46,16 +53,17 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/lQ9uLwY.jpg",
-      "https://i.imgur.com/A4nEc3b.jpg",
-      "https://i.imgur.com/Qm8hFq1.jpg"
+      "https://i.imgur.com/1ZLSUkr.jpg",
+      "https://i.imgur.com/VJijZdB.jpg",
+      "https://i.imgur.com/OxvfGWo.jpg",
+      "https://i.imgur.com/LwECtmT.jpg"
     ],
     "location": "Tetouan",
-    "title": "BMW 2 Series",
+    "title": "BMW M2",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.85,
-    "price": "550",
-    "total": "1650",
+    "price": "4500",
+    "total": "13000",
     "long": -0.0118446,
     "lat": 51.6253994
   },
