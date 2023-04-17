@@ -61,24 +61,28 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/Qm8hFq1.jpg",
-      "https://i.imgur.com/tZ52rqB.jpg",
-      "https://i.imgur.com/A4nEc3b.jpg"
+      "https://i.imgur.com/Myj1Iov.jpg",
+      "https://i.imgur.com/JEmaH9Y.jpg",
+      "https://i.imgur.com/9q8ZuKn.jpg",
+      "https://i.imgur.com/TqZoWi6.jpg",
+      "https://i.imgur.com/1akRd5V.jpg",
+      "https://i.imgur.com/mM7KX0W.jpg"
     ],
     "location": "Tetouan",
     "title": "Mclaren 765LT",
     "description": "A very spacious car with the beast motor inside, V8 best color and whatever options you like they are there!",
     "star": 4.97,
-    "price": "3900",
-    "total": "11700",
+    "price": "12000",
+    "total": "34000",
     "long": -0.0953648,
     "lat": 51.487963
   },
   {
     "imgs": [
-      "https://i.imgur.com/GbG382P.jpg",
-      "https://i.imgur.com/OAqbluO.jpg",
-      "https://i.imgur.com/tZ52rqB.jpg"
+      "https://i.imgur.com/A0x7k6M.jpg",
+      "https://i.imgur.com/NiTWCjz.jpg",
+      "https://i.imgur.com/BeUZxtd.jpg",
+      "https://i.imgur.com/Kr5zT02.jpg"
     ],
     "location": "Tetouan",
     "title": "Audi S3",
@@ -91,9 +95,11 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/OAqbluO.jpg",
-      "https://i.imgur.com/A4nEc3b.jpg",
-      "https://i.imgur.com/Qm8hFq1.jpg"
+      "https://i.imgur.com/X2wCcjd.jpg",
+      "https://i.imgur.com/0gGiLTp.jpg",
+      "https://i.imgur.com/aI11Pfx.jpg",
+      "https://i.imgur.com/hGJLwna.jpg",
+      "https://i.imgur.com/pFPKnvL.jpg"
     ],
     "location": "Tetouan",
     "title": "Renault Megane RS",
@@ -106,9 +112,9 @@
   },
   {
     "imgs": [
-      "https://i.imgur.com/8jsHPjj.jpg",
-      "https://i.imgur.com/Qm8hFq1.jpg",
-      "https://i.imgur.com/OAqbluO.jpg"
+      "https://i.imgur.com/E1Fb6Jb.jpg",
+      "https://i.imgur.com/kOmBl6X.jpg",
+      "https://i.imgur.com/rMtCYkk.jpg"
     ],
     "location": "Tetouan",
     "title": "Lamborghini Urus",
