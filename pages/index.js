@@ -64,11 +64,11 @@ export default function Home({ exploreData, cardsData }) {
 
 export async function getStaticProps() {
   const exploreData = await fetch(
-    "https://nox281.github.io/Krilya/public/CarsData.json"
+    "https://rbahi.github.io/Krilya/public/CarsData.json"
   ).then((res) => res.json());
 
   const cardsData = await fetch(
-    "https://nox281.github.io/Krilya/public/LocationsData.json"
+    "https://rbahi.github.io/Krilya/public/LocationsData.json"
   ).then((res) => res.json());
   return {
     props: {
