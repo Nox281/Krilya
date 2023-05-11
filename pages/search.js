@@ -76,7 +76,7 @@ export default Search;
 
 export async function getServerSideProps() {
   const searchResults = await fetch(
-    "https://nox281.github.io/Krilya/public/availableCars.json"
+    "https://rbahi.github.io/Krilya/public/availableCars.json"
   ).then((res) => res.json());
 
   return {
